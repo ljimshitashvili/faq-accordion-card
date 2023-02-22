@@ -84,10 +84,6 @@ hr{
 }
 
 @media (min-width: 1024px){
-    *{
-        /* overflow: hidden; */
-    }
-
     section{
         max-width: 920px;
         padding: 65px 95px 0px 0;
