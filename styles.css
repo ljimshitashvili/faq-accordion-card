@@ -42,19 +42,33 @@ section{
     position: relative;
 }
 
-.question-container{
+.text-container{
     margin-bottom: 19px;
 }
 
-.question-container div{
+.text-container div{
     display: flex;
     justify-content: space-between;
     margin-bottom: 13px;
 }
 
-.question-container p{
+.arrow{
+    width: 16px;
+    height: 8px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.hidden{
     display: none;
     margin-bottom: 16px;
+    color: #787887;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
 }
 
 h1{
@@ -81,6 +95,26 @@ hr{
 
 .box-desktop{
     display: none;
+}
+
+.active #question{
+    color: #1E1F36;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#question:hover{
+    cursor: pointer;
+    color: #F47B56;
+}
+
+.active .hidden{
+    display: block;
+}
+
+.active .arrow{
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1024px){
